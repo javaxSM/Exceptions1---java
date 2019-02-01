@@ -38,7 +38,6 @@ public class Reservation {
 		return checkOut;
 	}
 
-
 	public long duration() {
 		long diff = checkOut.getTime() - checkIn.getTime(); // Pegar diferencia entre data com milessegundos.
 		return TimeUnit.DAYS.convert(diff, TimeUnit.MICROSECONDS);

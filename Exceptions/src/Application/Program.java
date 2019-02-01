@@ -25,6 +25,7 @@ public class Program {
 		if(!checkOut.after(checkIn)) {
 			System.out.println("Error reservation: Check-out date  must  be after check-in date!");
 		}
+		
 		else {
 			Reservation reservation = new Reservation(number, checkIn, checkOut);
 			System.out.println("reservation" + reservation);
@@ -52,7 +53,6 @@ public class Program {
 				System.out.println("reservation" + reservation);
 			}
 		}
-		
 		
 		sc.close();
 		
